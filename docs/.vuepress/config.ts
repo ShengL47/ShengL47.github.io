@@ -8,7 +8,7 @@ import { navbar, sidebar } from "./configs";
 const isProd = process.env.NODE_ENV === "production";
 
 export default defineUserConfig({
-  base: "/",
+  base: "/shengl47.github.io/",
 
   head: [
     [
