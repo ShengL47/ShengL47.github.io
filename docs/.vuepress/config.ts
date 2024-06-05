@@ -10,8 +10,6 @@ const isProd = process.env.NODE_ENV === "production";
 export default defineUserConfig({
   base: "/",
 
-  dest: "dist",
-
   head: [
     [
       "link",
