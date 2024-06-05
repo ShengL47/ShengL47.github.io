@@ -21,7 +21,6 @@ date: 2021-02-03
 对于所有涉及到图标名称的配置项，请确保指定的图标是被引入过的，在[这里](/zh/docs/advanced/icons/)查看怎么引入图标。
 :::
 
-
 ## 导航栏标题
 
 与默认主题不同的是，本主题的导航栏左上角标题处显示的不是 [站点配置中的 `title` 项](https://v2.vuepress.vuejs.org/zh/reference/config.html#title)，而是：
@@ -61,9 +60,8 @@ module.exports = {
       }
     }
   })
-}
+};
 ```
-
 
 ## 作者信息
 
@@ -74,34 +72,48 @@ module.exports = {
   theme: gungnirTheme({
     personalInfo: {
       // 必须：名称，将在首页、移动端侧边栏和文章作者信息处显示
-      name: "Cool Dragon",
+      name: "ShengL47",
 
       // 必须：头像，将在首页和移动端侧边栏显示
       avatar: "/img/avatar.jpeg",
 
       // 必须：个人简介，将在首页显示
       description: "A cool dragon lost in human world.",
-      
+
       // 可选：社交平台账号，将在首页和移动端侧边栏显示
       sns: {
-        github: "Renovamen",  // Github
-        linkedin: "xiaohan-zou-55bba0160",  // 领英
-        facebook: "renovamen.zou",  // Facebook
-        twitter: "renovamen_zxh",  // 推特
-        zhihu: "chao-neng-gui-su",  // 知乎
-        weibo: "your-weibo-id",  // 新浪微博
-        email: "renovamenzxh@gmail.com",  // 邮箱
-        rss: "/rss.xml",  // RSS 文件的链接
+        github: "ShengL47", // Github
+        // linkedin: "", // 领英
+        // facebook: "", // Facebook
+        // twitter: "", // 推特
+        zhihu: "ai-xiao-31-90-73", // 知乎
+        // weibo: "", // 新浪微博
+        email: "s776940343@gmail.com", // 邮箱
+        // rss: "", // RSS 文件的链接
         // 添加其他的社交平台
-        bilibili: {  // 随便什么名字
-          icon: "ri-bilibili-line",  // 社交平台的图标
-          link: "https://www.bilibili.com/"  // 主页链接
+        bilibili: {
+          // 随便什么名字
+          icon: "ri-bilibili-line", // 社交平台的图标
+          link: "https://www.bilibili.com/" // 主页链接
+        },
+        youtube: {
+          icon: "la-youtube",
+          link: "https://www.youtube.com/"
+        },
+        douyin: {
+          icon: "bi-tiktok",
+          link: "https://www.douyin.com/user/self"
+        },
+        // gitee: "s1776940343"
+        gitee: {
+          icon: "si-gitee",
+          link: "https://gitee.com/s1776940343"
         }
         // ...
       }
     }
   })
-}
+};
 ```
 
 ## 首页
@@ -133,7 +145,6 @@ module.exports = {
 
 页面效果可以参考本站的[首页](/)，点击封面图左右两边的按钮可以在多张图片之间进行切换。
 
-
 ## 页面
 
 ```js
@@ -145,35 +156,34 @@ module.exports = {
       // 标签页配置
       tags: {
         // 可选：标签页副标题
-        subtitle: '吼哇朋友们，这是标签页',
+        subtitle: "吼哇朋友们，这是标签页",
 
         // 可选：标签页封面图路径和蒙版
         bgImage: {
-          path: '/img/pages/tags.jpg',
-          mask: 'rgba(211, 136, 37, .5)'
+          path: "/img/pages/tags.jpg",
+          mask: "rgba(211, 136, 37, .5)"
         }
       },
 
       // 链接页配置
       links: {
         // 可选：链接页副标题
-        subtitle: '吼哇朋友们，这是链接页',
+        subtitle: "吼哇朋友们，这是链接页",
 
         // 可选：链接页封面图路径和蒙版
         bgImage: {
-          path: '/img/pages/links.jpg',
-          mask: 'rgba(64, 118, 190, 0.5)'
+          path: "/img/pages/links.jpg",
+          mask: "rgba(64, 118, 190, 0.5)"
         }
       }
     }
   })
-}
+};
 ```
 
 页面效果可以参考本站的[标签](/tags)和[链接](/links)页。
 
 如果想要修改页面主标题，请参考多语言支持部分（在写了在写了咕咕咕）。
-
 
 ## 页脚自定义
 
@@ -191,9 +201,8 @@ module.exports = {
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
     `
   })
-}
+};
 ```
-
 
 ## 目录
 
@@ -204,7 +213,7 @@ module.exports = {
 
 module.exports = {
   theme: gungnirTheme({
-    catalog: false  // 可选，默认：true
+    catalog: false // 可选，默认：true
   })
-}
+};
 ```

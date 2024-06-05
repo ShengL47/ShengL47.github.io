@@ -1,17 +1,21 @@
 import { defineClientConfig } from "@vuepress/client";
 import { addIcons } from "oh-vue-icons";
 import {
+  BiGithub,
+  BiTiktok,
   CoGit,
   FaFortAwesome,
   FaSatelliteDish,
   FaTag,
+  LaYoutube,
   OiGitCompare,
   OiRocket,
   RiBilibiliLine,
   RiBook2Fill,
   RiGithubLine,
   RiSailboatLine,
-  RiVuejsLine
+  RiVuejsLine,
+  SiGitee
 } from "oh-vue-icons/icons";
 
 addIcons(
@@ -25,7 +29,11 @@ addIcons(
   RiGithubLine,
   OiGitCompare,
   OiRocket,
-  RiSailboatLine
+  RiSailboatLine,
+  LaYoutube,
+  BiTiktok,
+  BiGithub,
+  SiGitee
 );
 
 export default defineClientConfig({});

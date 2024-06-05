@@ -1,7 +1,9 @@
 import { defineClientConfig } from "@vuepress/client";
 import { addIcons, OhVueIcon } from "oh-vue-icons";
 import {
+  BiGithub,
   BiLayoutSidebarInset,
+  BiTiktok,
   FaChevronDown,
   FaChevronLeft,
   FaChevronRight,
@@ -20,11 +22,13 @@ import {
   FaSun,
   FaTwitter,
   HiTranslate,
+  LaYoutube,
   RiRssFill,
   RiSearch2Line,
   RiTimerLine,
   RiWeiboFill,
-  RiZhihuLine
+  RiZhihuLine,
+  SiGitee
 } from "oh-vue-icons/icons";
 import { h } from "vue";
 import type { DefineComponent } from "vue";
@@ -64,7 +68,11 @@ addIcons(
   FaListUl,
   BiLayoutSidebarInset,
   HiTranslate,
-  RiSearch2Line
+  RiSearch2Line,
+  LaYoutube,
+  BiTiktok,
+  BiGithub,
+  SiGitee
 );
 
 export default defineClientConfig({

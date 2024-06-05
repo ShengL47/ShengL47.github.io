@@ -29,19 +29,19 @@ export default defineUserConfig({
         href: `/img/logo/favicon-32x32.png`
       }
     ],
-    ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
-    ["meta", { name: "application-name", content: "Gungnir Theme" }],
-    ["meta", { name: "apple-mobile-web-app-title", content: "Gungnir Theme" }],
-    [
-      "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "black" }
-    ],
-    [
-      "link",
-      { rel: "apple-touch-icon", href: `/img/logo/apple-touch-icon.png` }
-    ],
-    ["meta", { name: "theme-color", content: "#377bb5" }],
-    ["meta", { name: "msapplication-TileColor", content: "#377bb5" }]
+    ["link", { rel: "manifest", href: "/manifest.webmanifest" }]
+    // ["meta", { name: "application-name", content: "Gungnir Theme" }],
+    // ["meta", { name: "apple-mobile-web-app-title", content: "Gungnir Theme" }],
+    // [
+    //   "meta",
+    //   { name: "apple-mobile-web-app-status-bar-style", content: "black" }
+    // ],
+    // [
+    //   "link",
+    //   { rel: "apple-touch-icon", href: `/img/logo/apple-touch-icon.png` }
+    // ],
+    // ["meta", { name: "theme-color", content: "#377bb5" }],
+    // ["meta", { name: "msapplication-TileColor", content: "#377bb5" }]
   ],
 
   // site-level locales config
@@ -75,17 +75,30 @@ export default defineUserConfig({
       avatar: "/img/avatar.jpeg",
       description: "欢迎来到我的博客呀",
       sns: {
-        github: "Renovamen",
-        linkedin: "xiaohan-zou-55bba0160",
-        facebook: "renovamen.zou",
-        twitter: "renovamen_zxh",
-        zhihu: "chao-neng-gui-su",
-        email: "renovamenzxh@gmail.com",
-        rss: "/rss.xml",
+        github: "ShengL47",
+        // linkedin: "",
+        // facebook: "",
+        // twitter: "",
+        zhihu: "ai-xiao-31-90-73",
+        email: "s1776940343@gmail.com",
+        // rss: "",
         // customized sns
         bilibili: {
           icon: "ri-bilibili-line",
           link: "https://www.bilibili.com/"
+        },
+        youtube: {
+          icon: "la-youtube",
+          link: "https://www.youtube.com/"
+        },
+        douyin: {
+          icon: "bi-tiktok",
+          link: "https://www.douyin.com/user/self"
+        },
+        // gitee: "s1776940343"
+        gitee: {
+          icon: "si-gitee",
+          link: "https://gitee.com/s1776940343"
         }
       }
     },
@@ -187,10 +200,18 @@ export default defineUserConfig({
     },
 
     footer: `
-      &copy; <a href="https://github.com/Renovamen" target="_blank">Renovamen</a> 2018-2022
+      &copy; <a href="https://github.com/ShengL47" target="_blank">ShengL47</a>
       <br>
-      Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
-      <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
+
+
+      <i class="iconfont icon-music"></i>
+      <a href="" target="_blank" rel="nofollow noopener"><span></span></a>
+
+      <div>
+        <span id="timeDate">载入天数...</span>
+        <span id="times">载入时分秒...</span>
+      </div>
+
     `
   }),
 

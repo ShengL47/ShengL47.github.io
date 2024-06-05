@@ -7,7 +7,6 @@ Gungnir uses Vue icon component `oh-vue-icons` (my another project lol) for icon
 
 See [here](https://github.com/Renovamen/oh-vue-icons) for documentation and other details of `oh-vue-icons`.
 
-
 ## Import Icons
 
 `oh-vue-icons` supports tree-shaking, icons that are not imported will not be included in your site's bundle files. So you can only import the icons you need to reduce the bundle size.
@@ -39,6 +38,11 @@ Gungnir has already imported the following icons:
 - `HiTranslate`: <v-icon name="hi-translate" />
 - `BiLayoutSidebarInset`: <v-icon name="bi-layout-sidebar-inset" />
 
+- `LaYoutube`: <v-icon name="la-youtube" />
+- `BiTiktok`: <v-icon name="bi-tiktok" />
+- `BiGithub`: <v-icon name="bi-github" />
+- `SiGitee`: <v-icon name="si-gitee" />
+
 To import other icons, you may need to search for icons' names [here](https://oh-vue-icons.js.org) and globally import theme in your `.vuepress/client.js` file (create one if it dosen't exist):
 
 ```js
@@ -53,7 +57,6 @@ addIcons(OiGitCompare, RiBook2Fill);
 
 Or you can also locally import them in your custom components.
 
-
 ## Use Icons
 
 Then you can use these icons in Markdown or your custom components:
@@ -61,8 +64,7 @@ Then you can use these icons in Markdown or your custom components:
 <v-icon name="oi-git-compare" /> <v-icon name="ri-book-2-fill" />
 
 ```html
-<v-icon name="oi-git-compare" />
-<v-icon name="ri-book-2-fill" />
+<v-icon name="oi-git-compare" /> <v-icon name="ri-book-2-fill" />
 ```
 
 `oh-vue-icons` also supports many other features, like editting icon's color, size, animation, flip and so on. Here are some examples:

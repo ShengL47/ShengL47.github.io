@@ -21,11 +21,9 @@ Please refer to [reference of VuePress's default theme config](https://v2.vuepre
 Please make sure all the icons you specified in the configuration file are already imported, see [here](/docs/advanced/icons/) to know how to import icons.
 :::
 
-
 ## Navbar Title
 
 Different from the default theme, Gungnir theme displays `themeConfig.navbarTitle` instead of the [`title` option in site config](https://v2.vuepress.vuejs.org/reference/config.html#title) at the left of the navbar:
-
 
 ```js{14}
 // .vuepress/config.js
@@ -62,9 +60,8 @@ module.exports = {
       }
     }
   })
-}
+};
 ```
-
 
 ## Author Information
 
@@ -75,34 +72,48 @@ module.exports = {
   theme: gungnirTheme({
     personalInfo: {
       // required: nickname, will be showed on home page, mobile sidebar and author info of articles
-      name: "Cool Dragon",
+      name: "ShengL47",
 
       // required: avatar, will be showed on home page and mobile sidebar
       avatar: "/img/avatar.jpeg",
 
       // required: a description, will be showed on home page
-      description: 'A cool dragon lost in human world.',
-      
+      description: "A cool dragon lost in human world.",
+
       // optional: id of social platform, will be showed on home page and mobile sidebar
       sns: {
-        github: 'Renovamen',  // Github
-        linkedin: 'xiaohan-zou-55bba0160',  // Linkedin
-        facebook: 'renovamen.zou',  // Facebook
-        twitter: 'renovamen_zxh',  // Twitter
-        zhihu: 'chao-neng-gui-su',  // Zhihu
-        weibo: 'your-weibo-id',  // Sina Weibo
-        email: 'renovamenzxh@gmail.com',  // Email
-        rss: "/rss.xml",  // link to RSS file
+        github: "ShengL47", // Github
+        // linkedin: "", // Linkedin
+        // facebook: "", // Facebook
+        // twitter: "", // Twitter
+        zhihu: "ai-xiao-31-90-73", // Zhihu
+        // weibo: "", // Sina Weibo
+        email: "s1776940343@gmail.com", // Email
+        // rss: "", // link to RSS file
         // if you want to add other social platforms
-        bilibili: {  // any name you want
-          icon: "ri-bilibili-line",  // platform icon
-          link: "https://www.bilibili.com/"  // profile URL
+        bilibili: {
+          // any name you want
+          icon: "ri-bilibili-line", // platform icon
+          link: "https://www.bilibili.com/" // profile URL
+        },
+        youtube: {
+          icon: "la-youtube",
+          link: "https://www.youtube.com/"
+        },
+        douyin: {
+          icon: "bi-tiktok",
+          link: "https://www.douyin.com/user/self"
+        },
+        // gitee: "s1776940343"
+        gitee: {
+          icon: "si-gitee",
+          link: "https://gitee.com/s1776940343"
         }
         // ...
       }
     }
   })
-}
+};
 ```
 
 ## Home Page
@@ -134,7 +145,6 @@ The `mask` is a translucent overlay placed on the cover image. It will be helpfu
 
 Check the [home page](/) of this site to see the effect. Click the left and right button to switch among multiple cover images.
 
-
 ## Other Pages
 
 ```js
@@ -146,35 +156,34 @@ module.exports = {
       // tags page
       tags: {
         // optional: subtitle of tags page
-        subtitle: 'Hey! Here is tags page!',
+        subtitle: "Hey! Here is tags page!",
 
         // optional: paths to and masks of the tags page cover images
         bgImage: {
-          path: '/img/pages/tags.jpg',
-          mask: 'rgba(211, 136, 37, .5)'
+          path: "/img/pages/tags.jpg",
+          mask: "rgba(211, 136, 37, .5)"
         }
       },
 
       // links page
       links: {
         // optional: subtitle of links page
-        subtitle: 'Hey! Here is links page!',
+        subtitle: "Hey! Here is links page!",
 
         // optional: paths to and masks of the links page cover images
         bgImage: {
-          path: '/img/pages/links.jpg',
-          mask: 'rgba(64, 118, 190, 0.5)'
+          path: "/img/pages/links.jpg",
+          mask: "rgba(64, 118, 190, 0.5)"
         }
       }
     }
   })
-}
+};
 ```
 
 Check the [tags page](/tags/) and [links page](/links/) to see the effect.
 
 To edit the title of the above mentioned pages, please refer to Multi-language Support (TODO) section.
-
 
 ## Custom Footer
 
@@ -192,9 +201,8 @@ module.exports = {
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
     `
   })
-}
+};
 ```
-
 
 ## Catalog
 
@@ -205,7 +213,7 @@ Enable or disable **post** catalog for all posts. Can be rewritten in each post'
 
 module.exports = {
   theme: gungnirTheme({
-    catalog: false  // optional, default: true
+    catalog: false // optional, default: true
   })
-}
+};
 ```

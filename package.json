@@ -10,7 +10,7 @@
     "dev:copy": "pnpm build:copy --watch",
     "docs:build": "pnpm --filter=docs docs:build",
     "docs:clean": "pnpm --filter=docs docs:clean",
-    "docs:dev": "pnpm --filter=docs docs:dev --open",
+    "docs:dev": "pnpm --filter=docs docs:dev",
     "docs:release": "pnpm build && pnpm docs:build",
     "docs:serve": "pnpm --filter=docs docs:serve",
     "lint": "eslint --ext .js,.ts,.vue .",
@@ -53,7 +53,6 @@
     "typescript": "^4.7.4",
     "vite": "~2.9.12"
   },
-  "packageManager": "pnpm@7.1.7",
   "engines": {
     "node": ">=14",
     "pnpm": ">=7"

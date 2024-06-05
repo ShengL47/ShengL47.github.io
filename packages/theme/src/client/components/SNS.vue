@@ -28,36 +28,49 @@ import { useThemeLocaleData } from "../composables";
 const defaultSNS = {
   github: {
     icon: "fa-github-alt",
+    // icon: "bi-github",
     preLink: "https://github.com/"
   },
-  linkedin: {
-    icon: "fa-linkedin-in",
-    preLink: "https://www.linkedin.com/in/"
-  },
-  facebook: {
-    icon: "fa-facebook-f",
-    preLink: "https://www.facebook.com/"
-  },
-  twitter: {
-    icon: "fa-twitter",
-    preLink: "https://www.twitter.com/"
-  },
+  // linkedin: {
+  //   icon: "fa-linkedin-in",
+  //   preLink: "https://www.linkedin.com/in/"
+  // },
+  // facebook: {
+  //   icon: "fa-facebook-f",
+  //   preLink: "https://www.facebook.com/"
+  // },
+  // twitter: {
+  //   icon: "fa-twitter",
+  //   preLink: "https://www.twitter.com/"
+  // },
   zhihu: {
     icon: "ri-zhihu-line",
     preLink: "https://www.zhihu.com/people/"
   },
-  weibo: {
-    icon: "ri-weibo-fill",
-    preLink: "http://weibo.com/u/"
-  },
+  // weibo: {
+  //   icon: "ri-weibo-fill",
+  //   preLink: "http://weibo.com/u/"
+  // },
   email: {
     icon: "fa-envelope",
     preLink: "mailto:"
   },
-  rss: {
-    icon: "ri-rss-fill",
-    preLink: "",
-    iconScale: 0.9
+  // rss: {
+  //   icon: "ri-rss-fill",
+  //   preLink: "",
+  //   iconScale: 0.9
+  // },
+  youtobe: {
+    icon: "la-youtube",
+    preLink: "https://www.youtube.com/"
+  },
+  douyin: {
+    icon: "bi-tiktok",
+    link: "https://www.douyin.com/user/self"
+  },
+  gitee: {
+    icon: "si-gitee",
+    link: "https://gitee.com/s1776940343"
   }
 };
 

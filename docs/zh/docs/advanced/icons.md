@@ -7,7 +7,6 @@ date: 2020-03-30
 
 在[这里](https://github.com/Renovamen/oh-vue-icons)查看 `oh-vue-icons` 的文档和更多信息。
 
-
 ## 引入图标
 
 `oh-vue-icons` 支持 tree-shaking，没有引入的图标不会出现在打包文件中。因此你可以只引入你想要使用的图标，从而减小打包体积。
@@ -39,6 +38,11 @@ date: 2020-03-30
 - `HiTranslate`: <v-icon name="hi-translate" />
 - `BiLayoutSidebarInset`: <v-icon name="bi-layout-sidebar-inset" />
 
+- `LaYoutube`: <v-icon name="la-youtube" />
+- `BiTiktok`: <v-icon name="bi-tiktok" />
+- `BiGithub`: <v-icon name="bi-github" />
+- `SiGitee`: <v-icon name="si-gitee" />
+
 如果想要引入别的图标，需要在 `oh-vue-icons` 的[网站](https://oh-vue-icons.js.org/cn)上搜索图标的名称，然后在你的项目的 `.vuepress/client.js` 文件（如果没有的话就新建一个）中全局引入图标：
 
 ```js
@@ -51,7 +55,6 @@ addIcons(OiGitCompare, RiBook2Fill);
 
 当然你也可以在你的自定义组件中局部引入。
 
-
 ## 使用图标
 
 然后你就可以在 Markdown 或自定义组件中使用引入的图标了：
@@ -59,8 +62,7 @@ addIcons(OiGitCompare, RiBook2Fill);
 <v-icon name="oi-git-compare" /> <v-icon name="ri-book-2-fill" />
 
 ```html
-<v-icon name="oi-git-compare" />
-<v-icon name="ri-book-2-fill" />
+<v-icon name="oi-git-compare" /> <v-icon name="ri-book-2-fill" />
 ```
 
 `oh-vue-icons` 还支持定制图标的颜色、大小、翻转、动画等，这是一些例子：
