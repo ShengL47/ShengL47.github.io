@@ -6,6 +6,6 @@
     "module": "ES2020",
     "types": ["webpack-env", "vite/client"]
   },
-  "include": ["**/.vuepress/**/*", "packages/**/*"],
+  "include": ["**/.vuepress/**/*", "packages/**/*", "docs/dist"],
   "exclude": ["node_modules", ".temp", "lib", "dist"]
 }
