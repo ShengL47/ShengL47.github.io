@@ -8,7 +8,7 @@ import { navbar, sidebar } from "./configs";
 const isProd = process.env.NODE_ENV === "production";
 
 export default defineUserConfig({
-  base: "/shengl47.github.io/",
+  base: "/",
 
   head: [
     [
@@ -48,13 +48,13 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "VuePress Theme Gungnir",
-      description: "A blog theme for VuePress"
+      title: "笙笙",
+      description: "A blog theme for ShengL47"
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "VuePress Theme Gungnir",
-      description: "VuePress 博客主题"
+      title: "笙笙",
+      description: "笙笙的的博客主题"
     }
   },
 
@@ -71,9 +71,9 @@ export default defineUserConfig({
 
     // personal information
     personalInfo: {
-      name: "Gungnir",
+      name: "笙笙",
       avatar: "/img/avatar.jpeg",
-      description: "A blog theme for VuePress",
+      description: "欢迎来到我的博客呀",
       sns: {
         github: "Renovamen",
         linkedin: "xiaohan-zou-55bba0160",
