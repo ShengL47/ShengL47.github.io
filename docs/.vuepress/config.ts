@@ -48,7 +48,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "笙笙",
+      title: "ShengL47",
       description: "A blog theme for ShengL47"
     },
     "/zh/": {
@@ -93,20 +93,24 @@ export default defineUserConfig({
     // header images on home page
     homeHeaderImages: [
       {
-        path: "/img/home-bg/1.jpg",
-        mask: "rgba(40, 57, 101, .4)"
+        path: "/img/home-bg/1.jpg"
+        // mask: "rgba(40, 57, 101, .4)"
       },
       {
-        path: "/img/home-bg/2.jpg",
-        mask: "rgb(251, 170, 152, .2)"
+        path: "/img/home-bg/2.jpg"
+        // mask: "rgb(251, 170, 152, .2)"
+      },
+      // {
+      //   path: "/img/home-bg/3.jpg"
+      //   // mask: "rgba(68, 74, 83, .1)"
+      // },
+      {
+        path: "/img/home-bg/4.jpg"
+        // mask: "rgba(19, 75, 50, .2)"
       },
       {
-        path: "/img/home-bg/3.jpg",
-        mask: "rgba(68, 74, 83, .1)"
-      },
-      {
-        path: "/img/home-bg/4.jpg",
-        mask: "rgba(19, 75, 50, .2)"
+        path: "/img/home-bg/5.jpg"
+        // mask: "rgba(19, 75, 50, .2)"
       }
     ],
 
